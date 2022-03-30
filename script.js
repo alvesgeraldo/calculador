@@ -22,7 +22,7 @@ function Calcular() {
 
   var valorFinal = parseFloat(valor) + valorCorrigidoMulta + valorCorrigidoJuros
 
-  
+  document.getElementById('diasAtraso').innerHTML = 'Dias de Atraso: ' + dias;
   document.getElementById('valorMulta').innerHTML = 'Valor da Multa: R$ ' + valorCorrigidoMulta.toFixed(2);
   document.getElementById('valorJuros').innerHTML = 'Valor dos Juros: R$ ' + valorCorrigidoJuros.toFixed(2);
   document.getElementById('valorTotal').innerHTML = 'Valor Total: R$ ' + valorFinal.toFixed(2);
