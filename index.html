@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Calculadora Juros</title>
+
+
+</head>
+<body>
+
+  <div class="container">
+    <h1>Calculador</h1>
+    <form>
+      <div>
+        <label for="data">Data Vencimento:</label>
+        <input type="date" name="data" id="data">
+      </div>
+      <div>
+        <label for="valor">Valor: (R$)</label>
+        <input type="text" id="valor" placeholder="1000.00">
+      </div>
+      <div>
+        <label for="multa">Multa: (%)</label>
+        <input type="text" id="multa" placeholder="1">
+      </div>
+      <div>
+        <label for="multa">Juros: (%)</label>
+        <input type="text" id="juros" placeholder="1">
+      </div>
+    </form>
+    <div class="box-button">
+      <button type="button" onclick="Calcular()">Calcular</button>
+    </div>
+
+    <div id="resultado">
+      <p id="valorMulta"></p>
+      <p id="valorJuros"></p>
+      <p id="valorTotal"></p>
+    </div>
+  </div>
+
+  
+
+
+
+  <script src="script.js"></script>
+  
+</body>
+</html>
